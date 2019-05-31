@@ -44,8 +44,8 @@ public class RenderGame extends JPanel{
 		g.drawString(score, (int) (getWidth() / 2 - score.length() * 2.5f), 10);
 		
 		if (SnakeRunner.isGameOver){
-			g.drawString(endStr, (int) (getWidth() / 2 - endStr.length() * 2.5f), (int) SnakeRunner.dim.getHeight() / 4);
-			g.drawString("PRESS SPACE TO CONTINUE..", ((int) (getWidth() / 2 - endStr.length() * 2.5f) - 45), (int) (SnakeRunner.dim.getHeight() / 4) + 15);
+			g.drawString(endStr, (int) (getWidth() / 2 - endStr.length() * 2.5f), ((int) SnakeRunner.dim.getHeight() / 4));
+			g.drawString("PRESS SPACE TO CONTINUE..", ((int) (getWidth() / 2 - endStr.length() * 2.5f) - 45), (int) (SnakeRunner.dim.getHeight() / 4) + 30);
 		}
 	}
 }
